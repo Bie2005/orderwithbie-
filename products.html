@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse our extensive collection of drip shoes, cargo pants, soccer wear and more – all prices in ZAR." />
+    <title>OrderWithBie | Products</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER – Same as in index.html -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">OrderWithBie <span class="abbr">(OWB)</span></a>
+        </div>
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRODUCT LISTING & FILTERING -->
+    <main>
+      <section id="product-list">
+        <h1>Our Products</h1>
+        <!-- Filter Tools -->
+        <div class="filter-bar">
+          <input type="text" id="searchBox" placeholder="Search products..." />
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="shoes">Shoes</option>
+            <option value="pants">Cargo Pants &amp; Jeans</option>
+            <option value="jackets">Jackets/Garments</option>
+            <option value="soccer">Soccer Wear</option>
+          </select>
+        </div>
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <div class="product-card fade-in" data-category="shoes">
+            <img src="/A81D7A28-9F4A-4F52-9AEE-5E42BC278156.jpeg" alt="Drip Nike Shoes" />
+            <h3>Drip Nike Shoes</h3>
+            <p class="price">R1,499.00</p>
+            <p class="size">Sizes: 7-12</p>
+            <button class="contact-order" data-product="Drip Nike Shoes">Contact to Order</button>
+          </div>
+          <div class="product-card fade-in" data-category="shoes">
+            <img src="https://via.placeholder.com/300x200?text=Adidas+Shoes" alt="Adidas Shoes" />
+            <h3>Adidas Shoes</h3>
+            <p class="price">R1,299.00</p>
+            <p class="size">Sizes: 6-11</p>
+            <button class="contact-order" data-product="Adidas Shoes">Contact to Order</button>
+          </div>
+          <div class="product-card fade-in" data-category="pants">
+            <img src="https://via.placeholder.com/300x200?text=Cargo+Pants" alt="Cargo Pants" />
+            <h3>Cargo Pants</h3>
+            <p class="price">R799.00</p>
+            <p class="size">Sizes: S, M, L, XL</p>
+            <button class="contact-order" data-product="Cargo Pants">Contact to Order</button>
+          </div>
+          <!-- More products can be added dynamically -->
+        </div>
+      </section>
+
+      <!-- COMMENT SUBMISSION -->
+      <section id="comments">
+        <h2>Leave Us a Comment</h2>
+        <form id="commentForm">
+          <label for="cName">Name:</label>
+          <input type="text" id="cName" name="cName" required />
+
+          <label for="cEmail">Email:</label>
+          <input type="email" id="cEmail" name="cEmail" required />
+
+          <label for="cPhone">Phone:</label>
+          <input type="tel" id="cPhone" name="cPhone" />
+
+          <label for="cComment">Comment:</label>
+          <textarea id="cComment" name="cComment" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Submit Comment</button>
+        </form>
+        <p class="comment-note">Your comment will be sent privately for review.</p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="company-info">
+          <p>&copy; 2025 OrderWithBie✅. All rights reserved.</p>
+          <p>Call/WhatsApp: <a href="tel:+27682578655">+27 682 578 655</a></p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/orderwithbie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/orderwithbie" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/orderwithbie" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://chat.whatsapp.com/DF66wl6roPE9IDsdRMoSBt" target="_blank" title="Join our WhatsApp group"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="security-note">
+          <p>Secured &amp; anti‑scam protected • Advanced antivirus measures in place</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

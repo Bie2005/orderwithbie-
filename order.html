@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Place your order with OrderWithBie – drip shoes, garments, soccer wear, etc. Orders are confirmed via email and SMS." />
+    <title>OrderWithBie | Place Order</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER (same as other pages) -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">OrderWithBie <span class="abbr">(OWB)</span></a>
+        </div>
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html" class="active">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ORDER FORM -->
+    <main>
+      <section id="order-form-section">
+        <h1>Place Your Order</h1>
+        <form id="orderForm">
+          <label for="productSelect">Select Product:</label>
+          <select id="productSelect" name="productSelect" required>
+            <option value="">--Choose a product--</option>
+            <option value="Drip Nike Shoes">Drip Nike Shoes</option>
+            <option value="Dior Shoes">Dior Shoes</option>
+            <option value="Adidas Shoes">Adidas Shoes</option>
+            <option value="Cargo Pants">Cargo Pants</option>
+            <option value="Soccer Wear">Soccer Wear</option>
+          </select>
+
+          <label for="size">Select Size:</label>
+          <input type="text" id="size" name="size" placeholder="Enter size or select from options" required />
+
+          <label for="custName">Your Name:</label>
+          <input type="text" id="custName" name="custName" required />
+
+          <label for="custEmail">Email:</label>
+          <input type="email" id="custEmail" name="custEmail" required />
+
+          <label for="custPhone">Phone:</label>
+          <input type="tel" id="custPhone" name="custPhone" required />
+
+          <label for="custAddress">Address:</label>
+          <textarea id="custAddress" name="custAddress" rows="3" required></textarea>
+
+          <label for="refCode">Referral Code (if any):</label>
+          <input type="text" id="refCode" name="refCode" placeholder="Enter referral code" />
+
+          <button type="submit" class="btn">Submit Order</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ORDER CONFIRMATION MODAL -->
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span class="close order-close">&times;</span>
+        <h2>Order Confirmation</h2>
+        <p id="orderModalText">Your order has been received! A confirmation email (and SMS) will be sent shortly.</p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="company-info">
+          <p>&copy; 2025 OrderWithBie✅. All rights reserved.</p>
+          <p>Call/WhatsApp: <a href="tel:+27682578655">+27 682 578 655</a></p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/orderwithbie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/orderwithbie" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/orderwithbie" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://chat.whatsapp.com/DF66wl6roPE9IDsdRMoSBt" target="_blank" title="Join our WhatsApp group"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="security-note">
+          <p>Secured &amp; anti‑scam protected • Advanced antivirus measures in place</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
